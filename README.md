@@ -6,8 +6,8 @@ The code in Python represents the core part of the application, which uses the r
 This software has been tested to detect the human sex dimorphism between two groups (males and females). The output can be further analysed using the R library associated, chromatinsight.tools https://github.com/ricolab/chromatinsight.tools .
 
 **Input**:
-* The output text files of ChromHMM (one for each chromosome). At least ten samples in each group are needed to provide enough statistical power.
-* A bed file with the genomic regions (such as TADs).
+* The output text files of ChromHMM binarisation function BinarizeBed (one for each chromosome) that assigns presence (1) or absence (0) of epigenomic features at intervals of 200bp (see https://ernstlab.biolchem.ucla.edu/software-and-resources/chromhmm ). At least ten samples in each group are needed to provide enough statistical power.
+* A bed file with the genomic regions of interest (such as TADs).
 
 **Output**:
 * A text file with the degree of dimorphism for each genomic region and each trial of the algorithm.
